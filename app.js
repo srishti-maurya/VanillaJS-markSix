@@ -8,6 +8,11 @@ function buildURL(text){
     return UrlServer+"?"+"text="+text
  }
  
+function handleError(err){
+    console.log("an error occured",err);
+    alert("There is something wrong with the server! Please try again later")
+}
+
 function clickHandler() {
   var textInput = inputTranslate.value;
   fetch(buildURL(textInput))
@@ -16,6 +21,7 @@ function clickHandler() {
         var translatedText = json.contents.translated;
         outputTranslate.innerHTML = translatedText;
     })
+    .catch(handleError)
 }
 
 btnTranslate.addEventListener("click", clickHandler);
