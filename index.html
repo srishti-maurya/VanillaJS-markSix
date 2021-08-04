@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talk in Banana</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Banana Translator</h1>
-    <textarea id="translate-input" placeholder="enter your text"></textarea>
+    <div class="grid-container">
+      <div class="item1">
+        <h1>Banana Translator</h1>
+      </div>
+      <div class="item2">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMzMwYjc1N2MtY2U2Ny00MTc3LTk1YWQtYzE3NmM5NWQ2YzkyXkEyXkFqcGdeQXVyMzAzODY0NzE@._V1_.jpg"
+          alt="minion-banana"
+        />
+      </div>
+      <div class="item3">
+        <textarea id="translate-input" placeholder="Enter your text"></textarea>
+        <br />
+        <button id="translate-btn" class="myButton">Translate</button>
+        <div class="translated-text-info">
+          👇🏼 Your translated text will appear here 👇🏼
+        </div>
+        <div id="translate-output"></div>
+      </div>
+    </div>
+    <footer><small>Made with ❤️ by Srishti Maurya</small></footer>
 
-    <button id="translate-btn">Translate</button>
-    <div id="translate-output"></div>
     <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
