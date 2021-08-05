@@ -111,3 +111,22 @@ textarea {
 footer{
     text-align: center;
 }
+
+@media (min-width:320px) and (max-width: 480px) {
+  img {
+    max-width: 150px;
+    height: auto;
+    border: 2px solid #022e57;
+    margin: 2rem 0rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "image image image"
+      "main main main";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
